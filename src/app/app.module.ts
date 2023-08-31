@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { PasswordComponent } from './password/password.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import {MatButtonModule} from '@angular/material/button'; import {MatInputModule} from '@angular/material/input';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,9 @@ import { DashboardComponent } from './dashboard/dashboard.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    MatInputModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
